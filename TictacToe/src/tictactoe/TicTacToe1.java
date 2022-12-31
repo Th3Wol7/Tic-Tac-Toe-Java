@@ -1,4 +1,4 @@
-package domain;
+package tictactoe;
 
 /*@author: Tyrien Gilpin
  * Created December 31, 2022
@@ -12,6 +12,27 @@ public class TicTacToe1 {
 	static char[][] board = new char[3][3];
 	static char currentPlayer = 'X';
 	
+	//Getters and setters
+	public static char[][] getBoard() {
+		return board;
+	}
+
+
+	public static void setBoard(char[][] board) {
+		TicTacToe1.board = board;
+	}
+
+
+	public static char getCurrentPlayer() {
+		return currentPlayer;
+	}
+
+
+	public static void setCurrentPlayer(char currentPlayer) {
+		TicTacToe1.currentPlayer = currentPlayer;
+	}
+
+
 	public static void printBoard() {
 		for (int i = 0; i < 3; i++) {
 			System.out.println(" " + board[i][0] + " | " + board[i][1] + " | " + board[i][2]);
