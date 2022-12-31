@@ -34,12 +34,12 @@ public class TicTacToe extends JFrame implements ActionListener {
 				add(buttons[i][j]);
 			}
 		}
-
+		
 		// create the "New Game" button
 		newGameButton = new JButton("New Game");
 		newGameButton.addActionListener(this);
 		add(newGameButton);
-
+		currentPlayer = "";
 		setVisible(true);
 
 	}
