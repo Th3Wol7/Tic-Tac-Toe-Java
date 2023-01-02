@@ -1,5 +1,7 @@
 package domain;
 
+import tictactoe.TicTacToe;
+
 public class GUIMain {
 	
 	public static void main(String[] args) {

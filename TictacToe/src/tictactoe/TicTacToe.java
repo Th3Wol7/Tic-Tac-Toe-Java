@@ -1,14 +1,18 @@
-package domain;
+package tictactoe;
 
-import java.awt.GridLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 public class TicTacToe extends JFrame implements ActionListener {
+	private static final long serialVersionUID = 1L;
 	private static final String X_WON = "X won";
 	private static final String O_WON = "O won";
 	private static final String DRAW = "Draw";
@@ -23,13 +27,23 @@ public class TicTacToe extends JFrame implements ActionListener {
 		setTitle("Tic Tac Toe");
 		setSize(400, 400);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setLayout(new GridLayout(3, 3));
-
+		//setLayout(new GridLayout(3, 3));
+		setLayout(new FlowLayout(FlowLayout.CENTER));
+		
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		// create the game board
 		buttons = new JButton[3][3];
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
 				buttons[i][j] = new JButton();
+				buttons[i][j].setPreferredSize(new Dimension(100, 100));
+				buttons[i][j].setFont(new Font("Arial", Font.BOLD, 30));
+				buttons[i][j].setFocusPainted(false);
 				buttons[i][j].addActionListener(this);
 				add(buttons[i][j]);
 			}
