@@ -1,5 +1,9 @@
 package domain;
-
+/*
+ * @author Tyrien Gilpin 
+ * This class contains allows you to run the console version of the 
+ * Tic Tac Toe game
+ */
 import java.util.Scanner;
 
 import tictactoe.TicTacToe1;

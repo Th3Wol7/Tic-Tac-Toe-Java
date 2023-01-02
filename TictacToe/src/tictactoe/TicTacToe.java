@@ -1,5 +1,9 @@
 package tictactoe;
-
+/*
+ * @author Tyrien Gilpin 
+ * This class contins the GUI configuration of the 
+ * Tic Tac Toe game
+ */
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
