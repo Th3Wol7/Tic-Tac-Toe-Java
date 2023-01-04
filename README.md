@@ -44,5 +44,5 @@ The game consists of two classes:
 
 ### Console Gameplay
 The game is played through the command line, where players are prompted to enter the row and column for their next move. If a player attempts to place their symbol on a space that is already occupied, they will be re-prompted to enter a new move. <br/>
-The game ends when a player wins or the game is a draw. The game board is displayed after each turn.
+The game ends when a player wins or the game is a draw. The game board is displayed after each turn.The game board is displayed after each turn.
 
