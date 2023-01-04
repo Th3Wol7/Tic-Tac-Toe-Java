@@ -18,7 +18,7 @@ When a player clicks on a space on the game board, the symbol for their current 
 The "New Game" button resets the game board and the currentPlayer variable to their initial states, allowing the players to start a new game.
 
 
-## Constants
+### Constants
 The following constants are used in the TicTacToe class:
 
 X_WON: String value "X won"
@@ -30,18 +30,16 @@ IN_PROGRESS: String value "In progress"
 
 ### Console Configuration
 The game consists of two classes:
--TicTacToe1
-	-This class contains the core logic for the Tic Tac Toe game. It has a 2D array called board that represents the game board, as well as a currentPlayer variable to keep track of which player's turn it is.
+- TicTacToe1
+	- This class contains the core logic for the Tic Tac Toe game. It has a 2D array called board that represents the game board, as well as a currentPlayer variable to keep track of which player's turn it is.
+	
+  - The TicTacToe1 class has several methods:
+  	- printBoard(): prints the current state of the game board to the console
+  	- checkWin(char player): checks if the specified player has won the game by checking for three of their symbols in a row (horizontal, vertical, or diagonal)
+  	- isDraw(): checks if the game is a draw by checking if all spaces on the board are occupied
 
-	-The TicTacToe1 class has several methods:
-		printBoard(): prints the current state of the game board to the console
-			checkWin(char player): checks if the specified player has won the game by checking for three of their symbols in a row (horizontal, vertical, or diagonal)
-	isDraw(): checks if the game is a draw by checking if all spaces on the board are occupied
-
--ConsoleMain
+- ConsoleMain
 	- This class contains the main method that runs the game. It creates an instance of the TicTacToe1 class and uses its methods to play the game. Players are prompted to enter their moves through the command line and the game board is displayed after each turn. The game ends when a player wins or the game is a draw.
-
-
 
 
 ### Console Gameplay
