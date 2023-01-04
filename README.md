@@ -1,7 +1,7 @@
 # Tic Tac Toe (Java)
 This is a simple Tic Tac Toe game implemented in 2 versions in Java. 
 One which is played in the terminal/console and the other 
-has a Graphical User Interface (GUI) which was implemented using the Swing GUI library. 
+has a Graphical User Interface (GUI) which is implemented using the Swing GUI library. 
 
 ### GUI version
 The game has a 3x3 grid for the players to place their respective symbols (either X or O). The player with three of their symbols in a row (horizontal, vertical, or diagonal) wins the game. If all of the spaces on the grid are filled and no player has won, the game is a draw.
